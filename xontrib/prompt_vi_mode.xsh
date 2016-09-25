@@ -7,10 +7,10 @@ from prompt_toolkit.key_binding import vi_state
 __all__ = ()
 
 
-# Automatically sets $VI_MODE and $XONSH_UPDATE_PROMPT_ON_KEYPRESS
+# Automatically sets $VI_MODE and $UPDATE_PROMPT_ON_KEYPRESS
 # as it's kind of pointless without them.
 $VI_MODE = True
-$XONSH_UPDATE_PROMPT_ON_KEYPRESS = True
+$UPDATE_PROMPT_ON_KEYPRESS = True
 
 
 def vi_mode():
