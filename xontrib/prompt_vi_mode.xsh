@@ -31,5 +31,5 @@ def vi_mode_not_insert():
     return mode_str if mode_str != 'INSERT' else None
 
 
-$FORMATTER_DICT['vi_mode'] = vi_mode
-$FORMATTER_DICT['vi_mode_not_insert'] = vi_mode_not_insert
+$PROMPT_FIELDS['vi_mode'] = vi_mode
+$PROMPT_FIELDS['vi_mode_not_insert'] = vi_mode_not_insert
