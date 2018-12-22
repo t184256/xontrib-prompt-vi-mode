@@ -1,6 +1,5 @@
 """Prompt formatters 'vi_mode' and 'vi_mode_not_insert'."""
 
-import builtins
 from prompt_toolkit.key_binding import vi_state
 
 
@@ -14,10 +13,12 @@ $UPDATE_PROMPT_ON_KEYPRESS = True
 
 
 def vi_mode():
-    state = builtins.__xonsh_shell__.prompter.cli.vi_state
+    state = __xonsh__.shell.shell.prompter.app.vi_state
     mode = state.input_mode
     if mode == vi_state.InputMode.INSERT:
         return 'INSERT'
+    elif mode == vi_state.InputMode.INSERT_MULTIPLE:
+        return 'INSERT_MULTIPLE'
     elif mode == vi_state.InputMode.NAVIGATION:
         return 'NORMAL'
     elif mode == vi_state.InputMode.REPLACE:
