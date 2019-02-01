@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='xontrib-prompt-vi-mode',
-    version='0.1.1',
+    version='0.1.3',
     url='https://github.com/t184256/xontrib-prompt-vi-mode',
     license='MIT',
     author='Alexander Sosedkin',
